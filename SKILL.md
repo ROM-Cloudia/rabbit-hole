@@ -31,8 +31,9 @@ below `--min-actions`.
 
 1. Run the detector against the current session's transcript:
    ```
-   py drift.py <transcript.jsonl> --task "<original task, verbatim>"
+   python3 drift.py <transcript.jsonl> --task "<original task, verbatim>"
    ```
+   (On Windows, use `py` in place of `python3`.)
    On Claude Code, the current session's transcript is the `.jsonl` file
    under `~/.claude/projects/<project>/<session-id>.jsonl` — use the most
    recently modified one for the current project if you don't have the exact
